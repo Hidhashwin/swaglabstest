@@ -1,0 +1,23 @@
+<suite name="swaglabs suite"> 
+	
+	<test name="logintest">
+		<classes>
+			<class name="testcases.Logintest">	
+			</class>
+		</classes>
+		</test>
+		
+	<test name="add court">
+		<classes>
+			<class name="testcases.addtocarttest">
+			</class>
+		</classes>
+		</test>
+		
+	<test name="remove court">
+		<classes>
+			<class name="testcases.removecarttest">	
+			</class>
+		</classes>
+	</test>
+</suite>
