@@ -7,6 +7,7 @@ public class addcart_pageojects {
 	
 	@FindBy(xpath = "//*[text()='Sauce Labs Fleece Jacket']")
 	public static WebElement productname;
+	//test
 	
 	@FindBy(xpath = "//*[@id='add-to-cart-sauce-labs-backpack']")
 	public static WebElement sauce_labs_backpack;
