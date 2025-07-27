@@ -9,17 +9,54 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">swaglabs suite</th></tr>
-<tr><td><a href="#t0">logintest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">2,412</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">add court</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">947</td><td></td><td></td></tr>
-<tr><td><a href="#t2">remove court</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4,276</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">7,635</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">logintest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">2,123</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">add court</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">883</td><td></td><td></td></tr>
+<tr><td><a href="#t2">remove court</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">23,794</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">26,800</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">swaglabs suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">logintest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.Logintest</td><td><a href="#m0">addcart</a></td><td rowspan="1">1752164784251</td><td rowspan="1">2193</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">add court &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.addtocarttest</td><td><a href="#m1">clickaddcart</a></td><td rowspan="1">1752164786535</td><td rowspan="1">940</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">remove court &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.removecarttest</td><td><a href="#m2">removecartoperation</a></td><td rowspan="1">1752164787486</td><td rowspan="1">4271</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">swaglabs suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">logintest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.Logintest</td><td><a href="#m0">addcart</a></td><td rowspan="1">1752231668243</td><td rowspan="1">2058</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">add court &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testcases.addtocarttest</td><td><a href="#m1">clickaddcart</a></td><td rowspan="1">1752231670383</td><td rowspan="1">879</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">remove court &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testcases.removecarttest</td><td><a href="#m2">removecartoperation</a></td><td rowspan="1">1752231671272</td><td rowspan="1">23775</td></tr></tbody>
 </table>
 <h2>logintest</h2><h3 id="m0">testcases.Logintest#addcart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h2>add court</h2><h3 id="m1">testcases.addtocarttest#clickaddcart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>remove court</h2><h3 id="m2">testcases.removecarttest#removecartoperation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>remove court</h2><h3 id="m2">testcases.removecarttest#removecartoperation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //button[@id=&apos;remove-sauce-labs-bike-light&apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commonfunctions.WaitUtility.waitForElementToBeClickable(WaitUtility.java:21)
+	at commonfunctions.actionclass.click(actionclass.java:19)
+	at testcases.removecarttest.removecartoperation(removecarttest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;remove-sauce-labs-bike-light&apos;]&quot;}
+  (Session info: chrome=138.0.7204.101)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [070546f44ae807f5d9f01b8e09d79828, findElement {value=//button[@id=&apos;remove-sauce-labs-bike-light&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.101, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Users\WELCOME\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53340}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53340/devtoo..., se:cdpVersion: 138.0.7204.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 070546f44ae807f5d9f01b8e09d79828
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 31 more
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

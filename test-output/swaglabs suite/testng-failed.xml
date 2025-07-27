@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [swaglabs suite]">
-  <test thread-count="5" name="logintest(failed)">
+  <test thread-count="5" name="remove court(failed)">
     <classes>
-      <class name="testcases.Logintest">
+      <class name="testcases.removecarttest">
         <methods>
           <include name="launchbrowser"/>
           <include name="teardown"/>
-          <include name="addcart"/>
+          <include name="removecartoperation"/>
         </methods>
-      </class> <!-- testcases.Logintest -->
+      </class> <!-- testcases.removecarttest -->
     </classes>
-  </test> <!-- logintest(failed) -->
+  </test> <!-- remove court(failed) -->
 </suite> <!-- Failed suite [swaglabs suite] -->
